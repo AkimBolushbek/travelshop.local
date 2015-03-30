@@ -18,9 +18,9 @@
             <tr>
                 <td class="id" width="30px"><?= $entry['id'] ?></td>
                 <td width="30%"><?= $entry['name'] ?></td>
-                <td width="30%"><?= $entry['status'] ?></td>
-                <td width="30%"><?= $entry['site'] ?></td>
-                <td width="20px"><img width="50px" src='/images/hotels/<?= $entry['image'] ?>'></td>
+                <td width="30%"><?= $entry['status'] ?> <span class="glyphicon glyphicon-star-empty"></span></td>
+                <td width="30%"><?= cut_str($entry['site'], 30) ?></td>
+                <td width="20px"><img width="150px" src='/images/hotels/<?= $entry['image'] ?>'></td>
                 <td width="30px"><?php
                     if ($entry['active'] == 'on') {
                         echo '<span style="-webkit-user-select: none;" class="label label-success active">да</span>';

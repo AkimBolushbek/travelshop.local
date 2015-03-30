@@ -16,7 +16,7 @@
             <tr>
                 <td class="id" width="30px"><?= $entry['id'] ?></td>
                 <td><?= mb_strimwidth(strip_tags($entry['text']), 0, 50, "..."); ?></td>
-                <td width="20px"><img width="200px" src='/images/<?= $module ?>/<?= $entry['image'] ?>'></td>
+                <td width="20px"><img width="250px" src='/images/<?= $module ?>/<?= $entry['image'] ?>'></td>
                 <td width="30px"><?php
                     if ($entry['active'] == 'on') {
                         echo '<span style="-webkit-user-select: none;" class="label label-success active">да</span>';
